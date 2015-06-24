@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li th:each="show : ${showList}">
+            <a th:href="@{/service/directory/shows/concret(showhref=${show.href})}"><p th:text="${show.title}"></p></a>
+        </li>
+    </ul>
+</body>
+</html>

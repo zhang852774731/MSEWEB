@@ -1,0 +1,1688 @@
+<entry format="2">
+    <entry name="scheduler">
+        <entry name="filename">
+            C:\ProgramData\Vizrt\Media Sequencer Engine\default.xml
+        </entry>
+        <entry name="pre_schedule">5</entry>
+        <entry name="hostname">ZHANG-PC</entry>
+        <entry name="log_level">50</entry>
+        <entry name="version">1.23.0.11745</entry>
+        <statistics>no</statistics>
+        <handler name="as_run_log_entry" type="as_run_log_entry" implicit="yes"/>
+        <handler name="atomic" type="atomic" implicit="yes"/>
+        <handler name="ats_env_modifier" type="ats_env_modifier" implicit="yes"/>
+        <handler name="attr" type="attr" implicit="yes"/>
+        <handler name="auto_cue" type="auto_cue" implicit="yes"/>
+        <handler name="callback" type="callback" implicit="yes"/>
+        <handler name="carousel" type="carousel" implicit="yes">
+            <fps>25.0</fps>
+            <acceptall>false</acceptall>
+            <entry name="feedback">carousel_status</entry>
+        </handler>
+        <handler name="channel_allocator" type="channel_allocator" implicit="yes"/>
+        <handler name="check_connection" type="check_connection" implicit="yes"/>
+        <handler name="command" type="command" implicit="yes"/>
+        <handler name="console" type="console" implicit="yes"/>
+        <handler name="copy" type="copy" implicit="yes"/>
+        <handler name="cstring" type="cstring" implicit="yes"/>
+        <handler name="deactivate" implicit="yes" config="dynamic" type="deactivate"/>
+        <handler name="deprecated" type="deprecated" implicit="yes"/>
+        <handler name="detached_exec" type="detached_exec" implicit="yes"/>
+        <handler name="dispatch_element" type="dispatch_element" implicit="yes"/>
+        <handler name="dmbuilder" type="dmbuilder" implicit="yes"/>
+        <handler name="element" implicit="yes" type="element"/>
+        <handler name="elements_runner" type="elements_runner" implicit="yes"/>
+        <handler name="element_change_notifier" type="element_change_notifier" implicit="yes"/>
+        <handler name="element_odbc_filler" type="element_odbc_filler" implicit="yes"/>
+        <handler name="env" implicit="yes" config="dynamic" type="env"/>
+        <handler name="error_summary" type="error_summary" implicit="yes"/>
+        <handler name="exec" implicit="yes" config="dynamic" type="exec"/>
+        <handler name="file" type="file" implicit="yes"/>
+        <handler name="for" type="for" implicit="yes"/>
+        <handler name="forked_exec" type="forked_exec" implicit="yes"/>
+        <handler name="gateway" type="gateway" implicit="yes">
+            <entry name="active_connections"/>
+            <log_level>95</log_level>
+        </handler>
+        <handler name="gpi" mode="stubborn" implicit="yes" description="gpi handler running in SRC-8 mode" type="gpi">
+            <box_type>SRC-8</box_type>
+            <in_lines>8</in_lines>
+            <out_lines>8</out_lines>
+            <port/>
+            <reversedinputorder>no</reversedinputorder>
+            <offset/>
+            <baseentry>/sys/gpi</baseentry>
+        </handler>
+        <handler name="handler_lookup" type="handler_lookup" implicit="yes"/>
+        <handler name="http_request" type="http_request" implicit="yes"/>
+        <handler name="http_server" type="http_server" implicit="yes">
+            <port>8580</port>
+            <lookup_tree_ref>/config/http_server</lookup_tree_ref>
+        </handler>
+        <handler name="initialize_playlist" type="initialize_playlist" implicit="yes"/>
+        <handler name="intelligentif" mode="stubborn" implicit="yes" type="intelligentif">
+            <entry name="verbose">no</entry>
+            <entry name="path"/>
+            <entry name="baudrate">9600</entry>
+            <entry name="base">/storage/shows</entry>
+            <entry name="encoding">ISO-8859-1</entry>
+            <entry name="port"/>
+        </handler>
+        <handler name="iterate" type="iterate" implicit="yes">
+            <state_path/>
+        </handler>
+        <handler name="janitor" type="janitor" implicit="yes">
+            <interval>24:00:00:00</interval>
+        </handler>
+        <handler name="json_string" type="json_string" implicit="yes"/>
+        <handler name="log" type="log" implicit="yes">
+            <phase>post</phase>
+        </handler>
+        <handler name="mcp" type="mcp" implicit="yes"/>
+        <handler name="mcuavs" implicit="yes" type="mcuavs">
+            <directory/>
+            <range_begin/>
+            <range_end/>
+            <offset/>
+            <super-delimiter>/</super-delimiter>
+            <replace-with-delimiter/>
+            <unconditional-deletes>no</unconditional-deletes>
+            <ignore-incorrect-mcu-events>no</ignore-incorrect-mcu-events>
+            <port/>
+        </handler>
+        <handler name="pb_listener" type="pb_listener" implicit="yes">
+            <port/>
+        </handler>
+        <handler name="persist" implicit="yes" config="dynamic" type="persist"/>
+        <handler name="pick" type="pick" implicit="yes"/>
+        <handler name="playlist_monitor" type="playlist_monitor" implicit="yes"/>
+        <handler name="playout_slots" type="playout_slots" implicit="yes">
+            <notifications>/state/playout_slots_notifications</notifications>
+            <profiles>/config/profiles</profiles>
+        </handler>
+        <handler name="preparechannels" type="preparechannels" implicit="yes"/>
+        <handler name="prepareshow" type="prepareshow" implicit="yes">
+            <store_in_vdom>no</store_in_vdom>
+        </handler>
+        <handler name="prepare_and_run" type="prepare_and_run" implicit="yes">
+            <store_in_vdom>no</store_in_vdom>
+        </handler>
+        <handler name="priority" type="priority" implicit="yes"/>
+        <handler name="profilecontrol" type="profilecontrol" implicit="yes"/>
+        <handler name="ref" implicit="yes" config="dynamic" type="ref"/>
+        <handler name="relative" type="relative" implicit="yes">
+            <fps>25.0</fps>
+        </handler>
+        <handler name="removelogfiles" type="removelogfiles" implicit="yes"/>
+        <handler name="replace" type="replace" implicit="yes"/>
+        <handler name="replace_all" type="replace_all" implicit="yes"/>
+        <handler name="return" type="return" implicit="yes"/>
+        <handler name="sentinel" type="sentinel" implicit="yes">
+            <path_to_watch/>
+        </handler>
+        <handler name="sequence" type="sequence" implicit="yes">
+            <fps>25.0</fps>
+        </handler>
+        <handler name="set" type="set" implicit="yes"/>
+        <handler name="sql" type="sql" implicit="yes">
+            <tnsname/>
+            <username/>
+            <password/>
+            <schema/>
+        </handler>
+        <handler name="state" type="state" implicit="yes"/>
+        <handler name="status_monitor" type="status_monitor" implicit="yes"/>
+        <handler name="step" type="step" implicit="yes"/>
+        <handler name="ticker" type="ticker" implicit="yes">
+            <baseentry/>
+            <feedback>status</feedback>
+            <host>localhost</host>
+            <ticker>default_ticker</ticker>
+        </handler>
+        <handler name="time" type="time" implicit="yes"/>
+        <handler name="timediff" type="timediff" implicit="yes"/>
+        <handler name="timematch" implicit="yes" config="dynamic" type="timematch"/>
+        <handler name="timetrigger" type="timetrigger" implicit="yes"/>
+        <handler name="treetalk" type="treetalk" implicit="yes">
+            <port>8594</port>
+        </handler>
+        <handler name="upgrade" type="upgrade" implicit="yes"/>
+        <handler name="var" type="var" implicit="yes"/>
+        <handler name="vdcp_client" type="vdcp_client" implicit="yes"/>
+        <handler name="verbose" type="verbose" implicit="yes">
+            <entry name="state">constructed</entry>
+        </handler>
+        <handler name="video" type="video" implicit="yes"/>
+        <handler name="virtualtc" timing="interval" implicit="yes" type="virtualtc">
+            <entry name="fps">25</entry>
+            <entry name="realtime_test">no</entry>
+        </handler>
+        <handler name="vizio_client" type="vizio_client" implicit="yes">
+            <port>6200</port>
+            <host/>
+            <io_failure_path/>
+        </handler>
+        <handler name="viz_preview_loader" type="viz_preview_loader" implicit="yes"/>
+        <handler name="vme" type="vme" implicit="yes"/>
+        <handler name="weather" type="weather" implicit="yes"/>
+        <handler name="xml" type="xml" implicit="yes"/>
+        <handler name="xmlio" implicit="yes" config="dynamic" type="xmlio"/>
+        <handler name="xsltransform" type="xsltransform" implicit="yes"/>
+        <handler name="zeroconf" type="zeroconf" implicit="yes"/>
+        <handler name="trio_cursor" type="iterate" instance="cg">
+            <state_path>/state/cg/iterator/element</state_path>
+        </handler>
+        <handler name="viz_background_g" resolved_ip="127.0.0.1" mode="enabled" connected="yes" type="viz">
+            <entry name="encoding">UTF-8</entry>
+            <entry name="state"/>
+            <entry name="renderer">
+                <entry name="localhost">
+                    <entry name="active"/>
+                </entry>
+            </entry>
+            <entry name="publishing_point_uri"/>
+            <entry name="publishing_point_atom_id"/>
+            <entry name="info"/>
+        </handler>
+        <handler name="viz_background_k" mode="enabled" connected="yes" type="viz">
+            <entry name="encoding">UTF-8</entry>
+            <entry name="state"/>
+            <entry name="renderer">
+                <entry name="127.0.0.1">
+                    <entry name="active"/>
+                </entry>
+            </entry>
+            <entry name="publishing_point_uri"/>
+            <entry name="publishing_point_atom_id"/>
+            <entry name="info"/>
+        </handler>
+        <handler name="viz_background_w" mode="enabled" connected="yes" type="viz">
+            <entry name="encoding">UTF-8</entry>
+            <entry name="state"/>
+            <entry name="renderer">
+                <entry name="127.0.0.1">
+                    <entry name="active"/>
+                </entry>
+            </entry>
+            <entry name="publishing_point_uri"/>
+            <entry name="publishing_point_atom_id"/>
+            <entry name="info"/>
+        </handler>
+        <handler name="viz_background_p" resolved_ip="127.0.0.1" mode="enabled" connected="yes" type="viz">
+            <entry name="encoding">UTF-8</entry>
+            <entry name="state"/>
+            <entry name="renderer">
+                <entry name="localhost">
+                    <entry name="active"/>
+                </entry>
+            </entry>
+            <entry name="publishing_point_uri"/>
+            <entry name="publishing_point_atom_id"/>
+            <entry name="info"/>
+        </handler>
+    </entry>
+    <entry name="config">
+        <entry name="override">
+            <entry name="disable_gfx_clip_root">no</entry>
+        </entry>
+        <entry name="take_duration">
+            <ignore_on_direct_take>no</ignore_on_direct_take>
+        </entry>
+        <entry name="weather">
+            <entry name="startup"/>
+        </entry>
+        <entry name="cg">
+            <entry name="frontend">
+                <entry name="keymap">
+                    <entry name="read" key="+"/>
+                    <entry name="change_path" key="F2" control="true"/>
+                    <entry name="save" key="S" control="true"/>
+                    <entry name="add_view" key="--NONE--"/>
+                    <entry name="focus_active_view" key="F1" control="true"/>
+                    <entry name="focus_next_view" key="--NONE--"/>
+                    <entry name="focus_prev_view" key="--NONE--"/>
+                    <entry name="load_image_from_viz" key="F5" control="true"/>
+                    <entry name="load_image_from_db" key="F6" control="true"/>
+                    <entry name="kerning" key="K" control="true"/>
+                    <entry name="scaling" key="E" control="true"/>
+                    <entry name="position" key="Q" control="true"/>
+                    <entry name="active" key="T" control="true"/>
+                    <entry name="rotation" key="W" control="true"/>
+                    <entry name="browse_file" key="B" control="true"/>
+                    <entry name="take" key="-"/>
+                    <entry name="takeout" key="*"/>
+                    <entry name="takenext" key="F8"/>
+                    <entry name="text" key="SPACE" control="true"/>
+                    <entry name="onair" key="--NONE--"/>
+                    <entry name="offair" key="--NONE--"/>
+                </entry>
+            </entry>
+        </entry>
+        <entry name="trio">
+            <entry name="local">
+                <entry name="APIVAN-PC">
+                    <entry name="columns">
+                        <entry name="image_size">ExtraSmall</entry>
+                        <entry name="col14">22</entry>
+                        <entry name="col16">22</entry>
+                        <entry name="columnpositions">
+                            20:20,19:19,18:18,17:17,16:2,15:16,14:15,13:14,12:0,11:1,10:13,9:12,8:11,7:10,6:9,5:8,4:7,3:6,2:5,1:4,0:3
+                        </entry>
+                    </entry>
+                    <entry name="autoupdate_preview">false</entry>
+                    <entry name="tablist">
+                        <entry name="size">
+                            <entry name="col0">120</entry>
+                            <entry name="col1">1005</entry>
+                            <entry name="col2">0</entry>
+                        </entry>
+                    </entry>
+                    <entry name="showitemlist">true</entry>
+                    <entry name="numerical_callup_mode">true</entry>
+                    <entry name="callup_digits">4</entry>
+                    <entry name="gui">
+                        <entry name="directory_browser_active_tab">shows</entry>
+                        <entry name="previous_settings_category">Import/Export Settings</entry>
+                    </entry>
+                    <entry name="tabbing_enabled">true</entry>
+                    <entry name="numpad_enabled">true</entry>
+                    <entry name="media_items_per_page">100</entry>
+                    <entry name="use_ctrla_selection"/>
+                    <entry name="fix_unicode_selection">false</entry>
+                    <entry name="post_rendering">
+                        <entry name="last_from">0</entry>
+                        <entry name="last_to">5</entry>
+                    </entry>
+                    <entry name="autofollow">
+                        <entry name="enabled">true</entry>
+                        <entry name="size">15</entry>
+                    </entry>
+                    <entry name="autopreview">false</entry>
+                    <entry name="showglobalpos">false</entry>
+                    <entry name="playlistcolors">
+                        <entry name="group">$00D9EAED</entry>
+                        <entry name="scroller">$02FFAA88</entry>
+                        <entry name="template">$02ADCCE1</entry>
+                        <entry name="selected">$020C94FC</entry>
+                        <entry name="faulty">$020B55FF</entry>
+                        <entry name="item">$02EBDBD7</entry>
+                        <entry name="template_inited">$02DFFFE1</entry>
+                        <entry name="item_inited">$00AECCE2</entry>
+                        <entry name="last_taken">1</entry>
+                        <entry name="last_read">2</entry>
+                        <entry name="external_cursor">3</entry>
+                    </entry>
+                    <entry name="aspectratio">
+                        <entry name="mode">HDTV</entry>
+                        <entry name="width">720</entry>
+                        <entry name="height">576</entry>
+                        <entry name="aspect">
+                            <entry name="width">720</entry>
+                            <entry name="height">576</entry>
+                        </entry>
+                    </entry>
+                    <entry name="single_machine_mode">false</entry>
+                    <entry name="allow_alphanumeric_imports">true</entry>
+                    <entry name="videohub">
+                        <entry name="auto_search_on_read">false</entry>
+                    </entry>
+                    <entry name="itemselector">
+                        <entry name="autoupdatecache">false</entry>
+                    </entry>
+                    <entry name="pooleditor">
+                        <entry name="disable_initial_iconloading">false</entry>
+                    </entry>
+                    <entry name="reload_page_on_serverchange">false</entry>
+                    <entry name="loglevel"/>
+                    <entry name="script_loglevel"/>
+                    <entry name="onair_password"/>
+                    <entry name="vizworld">
+                        <entry name="simple_client">Classic Edition</entry>
+                    </entry>
+                    <entry name="create_page_icons">false</entry>
+                    <entry name="ignore_nameless_tabfields"/>
+                    <entry name="text_import_format">UTF8</entry>
+                    <entry name="groups">
+                        <entry name="auto_expand">true</entry>
+                        <entry name="hidenamelessgroups">false</entry>
+                        <entry name="hide_empty_locked_groups">false</entry>
+                    </entry>
+                    <entry name="pagelist">
+                        <entry name="font_size">8</entry>
+                    </entry>
+                    <entry name="playlist">
+                        <entry name="auto_read">false</entry>
+                        <entry name="select_next_after_read">true</entry>
+                        <entry name="remove_from_show_on_close">yes</entry>
+                        <entry name="auto_reactivate">false</entry>
+                    </entry>
+                    <entry name="avifolder"/>
+                    <entry name="diffolder"/>
+                    <entry name="imagefolder"/>
+                    <entry name="audiofolder"/>
+                    <entry name="scripts">
+                        <entry name="path"/>
+                    </entry>
+                    <entry name="logfile_path"/>
+                    <entry name="shared_temp_folder"/>
+                    <entry name="help">
+                        <entry name="path">
+                            C:\Program Files (x86)\vizrt\Viz Trio\documentation\WebHelp\index.htm
+                        </entry>
+                    </entry>
+                    <entry name="renderer_force_sleep">false</entry>
+                    <entry name="viz">
+                        <entry name="vconntimeout">30000</entry>
+                    </entry>
+                    <entry name="enable_single_layer_transition_logic">false</entry>
+                    <entry name="refreshrate">50</entry>
+                    <entry name="restrictions">
+                        <entry name="shows">
+                            <entry name="deny_browse_viz_dir">true</entry>
+                        </entry>
+                        <entry name="page">
+                            <entry name="deny_save_to_db">true</entry>
+                        </entry>
+                        <entry name="trio">
+                            <entry name="gui:show_triocommands">true</entry>
+                            <entry name="gui:artist_mode">false</entry>
+                        </entry>
+                    </entry>
+                    <entry name="store_database_button_visible">false</entry>
+                    <entry name="showcommands">false</entry>
+                    <entry name="enable_vizartist_button">true</entry>
+                    <entry name="vizdb">
+                        <entry name="mruhostlist">bkkvgh localhost</entry>
+                        <entry name="nameserver">bkkvgh</entry>
+                        <entry name="database">VizDbServer</entry>
+                        <entry name="user">Guest</entry>
+                        <entry name="password"/>
+                        <entry name="autologin">false</entry>
+                    </entry>
+                    <entry name="image">
+                        <entry name="use_picture_db">true</entry>
+                        <entry name="picture_db_connection_string"/>
+                    </entry>
+                    <entry name="template_view">
+                        <entry name="panel_height">126</entry>
+                    </entry>
+                    <entry name="preview_mode">rgb</entry>
+                    <entry name="startupshow">untitled show</entry>
+                    <entry name="last_import_scene_path">SCENE*Default</entry>
+                    <entry name="show_boundingbox">true</entry>
+                    <entry name="show_titlearea">true</entry>
+                    <entry name="show_safearea">true</entry>
+                    <entry name="import_frame">
+                        <entry name="sort_by">name</entry>
+                        <entry name="sort_direction">ascending</entry>
+                    </entry>
+                    <entry name="skip_scene_exists_on_read">false</entry>
+                    <entry name="update_external_cursor_on_saveas">false</entry>
+                </entry>
+                <entry name="APIVAN-PC#2">
+                    <entry name="columns">
+                        <entry name="image_size">ExtraSmall</entry>
+                        <entry name="col14">22</entry>
+                        <entry name="col16">22</entry>
+                        <entry name="columnpositions">
+                            20:20,19:19,18:18,17:17,16:2,15:16,14:15,13:14,12:0,11:1,10:13,9:12,8:11,7:10,6:9,5:8,4:7,3:6,2:5,1:4,0:3
+                        </entry>
+                    </entry>
+                    <entry name="autoupdate_preview">false</entry>
+                    <entry name="tablist">
+                        <entry name="size">
+                            <entry name="col0">120</entry>
+                            <entry name="col1">1005</entry>
+                            <entry name="col2">0</entry>
+                        </entry>
+                    </entry>
+                    <entry name="showitemlist">true</entry>
+                    <entry name="numerical_callup_mode">true</entry>
+                    <entry name="callup_digits">4</entry>
+                    <entry name="gui">
+                        <entry name="directory_browser_active_tab">shows</entry>
+                        <entry name="previous_settings_category">Import/Export Settings</entry>
+                    </entry>
+                    <entry name="tabbing_enabled">true</entry>
+                    <entry name="numpad_enabled">true</entry>
+                    <entry name="media_items_per_page">100</entry>
+                    <entry name="use_ctrla_selection"/>
+                    <entry name="fix_unicode_selection">false</entry>
+                    <entry name="post_rendering">
+                        <entry name="last_from">0</entry>
+                        <entry name="last_to">5</entry>
+                    </entry>
+                    <entry name="autofollow">
+                        <entry name="enabled">true</entry>
+                        <entry name="size">15</entry>
+                    </entry>
+                    <entry name="autopreview">false</entry>
+                    <entry name="showglobalpos">false</entry>
+                    <entry name="playlistcolors">
+                        <entry name="group">$00D9EAED</entry>
+                        <entry name="scroller">$02FFAA88</entry>
+                        <entry name="template">$02ADCCE1</entry>
+                        <entry name="selected">$020C94FC</entry>
+                        <entry name="faulty">$020B55FF</entry>
+                        <entry name="item">$02EBDBD7</entry>
+                        <entry name="template_inited">$02DFFFE1</entry>
+                        <entry name="item_inited">$00AECCE2</entry>
+                        <entry name="last_taken">1</entry>
+                        <entry name="last_read">2</entry>
+                        <entry name="external_cursor">3</entry>
+                    </entry>
+                    <entry name="aspectratio">
+                        <entry name="mode">HDTV</entry>
+                        <entry name="width">720</entry>
+                        <entry name="height">576</entry>
+                        <entry name="aspect">
+                            <entry name="width">720</entry>
+                            <entry name="height">576</entry>
+                        </entry>
+                    </entry>
+                    <entry name="single_machine_mode">false</entry>
+                    <entry name="allow_alphanumeric_imports">true</entry>
+                    <entry name="videohub">
+                        <entry name="auto_search_on_read">false</entry>
+                    </entry>
+                    <entry name="itemselector">
+                        <entry name="autoupdatecache">false</entry>
+                    </entry>
+                    <entry name="pooleditor">
+                        <entry name="disable_initial_iconloading">false</entry>
+                    </entry>
+                    <entry name="reload_page_on_serverchange">false</entry>
+                    <entry name="loglevel"/>
+                    <entry name="script_loglevel"/>
+                    <entry name="onair_password"/>
+                    <entry name="vizworld">
+                        <entry name="simple_client">Classic Edition</entry>
+                    </entry>
+                    <entry name="create_page_icons">false</entry>
+                    <entry name="ignore_nameless_tabfields"/>
+                    <entry name="text_import_format">UTF8</entry>
+                    <entry name="groups">
+                        <entry name="auto_expand">true</entry>
+                        <entry name="hidenamelessgroups">false</entry>
+                        <entry name="hide_empty_locked_groups">false</entry>
+                    </entry>
+                    <entry name="pagelist">
+                        <entry name="font_size">8</entry>
+                    </entry>
+                    <entry name="playlist">
+                        <entry name="auto_read">false</entry>
+                        <entry name="select_next_after_read">true</entry>
+                        <entry name="remove_from_show_on_close">yes</entry>
+                        <entry name="auto_reactivate">false</entry>
+                    </entry>
+                    <entry name="avifolder"/>
+                    <entry name="diffolder"/>
+                    <entry name="imagefolder"/>
+                    <entry name="audiofolder"/>
+                    <entry name="scripts">
+                        <entry name="path"/>
+                    </entry>
+                    <entry name="logfile_path"/>
+                    <entry name="shared_temp_folder"/>
+                    <entry name="help">
+                        <entry name="path">
+                            C:\Program Files (x86)\vizrt\Viz Trio\documentation\WebHelp\index.htm
+                        </entry>
+                    </entry>
+                    <entry name="renderer_force_sleep">false</entry>
+                    <entry name="viz">
+                        <entry name="vconntimeout">30000</entry>
+                    </entry>
+                    <entry name="enable_single_layer_transition_logic">false</entry>
+                    <entry name="refreshrate">50</entry>
+                    <entry name="restrictions">
+                        <entry name="shows">
+                            <entry name="deny_browse_viz_dir">true</entry>
+                        </entry>
+                        <entry name="page">
+                            <entry name="deny_save_to_db">true</entry>
+                        </entry>
+                        <entry name="trio">
+                            <entry name="gui:show_triocommands">true</entry>
+                            <entry name="gui:artist_mode">false</entry>
+                        </entry>
+                    </entry>
+                    <entry name="store_database_button_visible">false</entry>
+                    <entry name="showcommands">false</entry>
+                    <entry name="enable_vizartist_button">true</entry>
+                    <entry name="vizdb">
+                        <entry name="mruhostlist">bkkvgh localhost</entry>
+                        <entry name="nameserver">bkkvgh</entry>
+                        <entry name="database">VizDbServer</entry>
+                        <entry name="user">Guest</entry>
+                        <entry name="password"/>
+                        <entry name="autologin">false</entry>
+                    </entry>
+                    <entry name="image">
+                        <entry name="use_picture_db">true</entry>
+                        <entry name="picture_db_connection_string"/>
+                    </entry>
+                    <entry name="template_view">
+                        <entry name="panel_height">126</entry>
+                    </entry>
+                    <entry name="preview_mode">rgb</entry>
+                    <entry name="startupshow">untitled show</entry>
+                    <entry name="last_import_scene_path">SCENE*Default</entry>
+                    <entry name="show_boundingbox">true</entry>
+                    <entry name="show_titlearea">true</entry>
+                    <entry name="show_safearea">true</entry>
+                    <entry name="import_frame">
+                        <entry name="sort_by">name</entry>
+                        <entry name="sort_direction">ascending</entry>
+                    </entry>
+                    <entry name="skip_scene_exists_on_read">false</entry>
+                    <entry name="update_external_cursor_on_saveas">false</entry>
+                </entry>
+                <entry name="ZHANG-PC">
+                    <entry name="playlist">
+                        <entry name="auto_reactivate">true</entry>
+                        <entry name="auto_read">false</entry>
+                        <entry name="select_next_after_read">true</entry>
+                        <entry name="remove_from_show_on_close">yes</entry>
+                    </entry>
+                    <entry name="activeprofile">
+                        <entry name="ZHANG-PC">default</entry>
+                    </entry>
+                    <entry name="gui">
+                        <entry name="previous_settings_category">Output</entry>
+                        <entry name="directory_browser_active_tab">shows</entry>
+                    </entry>
+                    <entry name="skip_scene_exists_on_read">false</entry>
+                    <entry name="aspectratio">
+                        <entry name="height">405</entry>
+                        <entry name="width">720</entry>
+                        <entry name="mode">HDTV</entry>
+                        <entry name="aspect">
+                            <entry name="width">720</entry>
+                            <entry name="height">576</entry>
+                        </entry>
+                    </entry>
+                    <entry name="groups">
+                        <entry name="auto_expand">true</entry>
+                        <entry name="hidenamelessgroups">false</entry>
+                        <entry name="hide_empty_locked_groups">false</entry>
+                    </entry>
+                    <entry name="update_external_cursor_on_read">true</entry>
+                    <entry name="columns">
+                        <entry name="image_size">Large</entry>
+                        <entry name="col14">101</entry>
+                        <entry name="col16">101</entry>
+                        <entry name="columnpositions">
+                            20:20,19:19,18:18,17:17,16:2,15:16,14:15,13:14,12:0,11:1,10:13,9:12,8:11,7:10,6:9,5:8,4:7,3:6,2:5,1:4,0:3
+                        </entry>
+                        <entry name="col0">105</entry>
+                        <entry name="col1">105</entry>
+                        <entry name="col2">0</entry>
+                        <entry name="col3">105</entry>
+                        <entry name="col4">116</entry>
+                        <entry name="col5">105</entry>
+                        <entry name="col6">0</entry>
+                        <entry name="col7">18</entry>
+                        <entry name="col8">27</entry>
+                        <entry name="col9">27</entry>
+                        <entry name="col10">105</entry>
+                        <entry name="col11">105</entry>
+                        <entry name="col12">129</entry>
+                        <entry name="col13">27</entry>
+                        <entry name="col15">61</entry>
+                        <entry name="col17">105</entry>
+                        <entry name="col18">105</entry>
+                        <entry name="col19">61</entry>
+                        <entry name="col20">23</entry>
+                        <entry name="showchannelcol">true</entry>
+                        <entry name="showvariantcol">true</entry>
+                        <entry name="showloopcol">false</entry>
+                        <entry name="lockcolumnswidth">true</entry>
+                    </entry>
+                    <entry name="template_view">
+                        <entry name="columns">
+                            <entry name="name">
+                                <entry name="width">208</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="description">
+                                <entry name="width">287</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="variant">
+                                <entry name="width">187</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="icon">
+                                <entry name="width">100</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="layers">
+                                <entry name="width">406</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                        </entry>
+                        <entry name="column_order">icon,name,variant,description,layers</entry>
+                        <entry name="panel_height">310</entry>
+                    </entry>
+                    <entry name="autoupdate_preview">false</entry>
+                    <entry name="tablist">
+                        <entry name="size">
+                            <entry name="col0">120</entry>
+                            <entry name="col1">1067</entry>
+                            <entry name="col2">0</entry>
+                        </entry>
+                    </entry>
+                    <entry name="showitemlist">true</entry>
+                    <entry name="numerical_callup_mode">true</entry>
+                    <entry name="callup_digits">4</entry>
+                    <entry name="tabbing_enabled">true</entry>
+                    <entry name="numpad_enabled">true</entry>
+                    <entry name="media_items_per_page">100</entry>
+                    <entry name="use_ctrla_selection"/>
+                    <entry name="fix_unicode_selection">false</entry>
+                    <entry name="post_rendering">
+                        <entry name="last_from">0</entry>
+                        <entry name="last_to">5</entry>
+                        <entry name="last_host">localhost</entry>
+                        <entry name="last_plugin"/>
+                        <entry name="last_format"/>
+                        <entry name="last_codec"/>
+                        <entry name="last_fps"/>
+                        <entry name="last_pixel_format">RGB</entry>
+                        <entry name="last_path">C:\Program Files (x86)\vizrt\Viz3\trioclip</entry>
+                    </entry>
+                    <entry name="autofollow">
+                        <entry name="enabled">true</entry>
+                        <entry name="size">15</entry>
+                    </entry>
+                    <entry name="autopreview">false</entry>
+                    <entry name="showglobalpos">false</entry>
+                    <entry name="playlistcolors">
+                        <entry name="group">$00D9EAED</entry>
+                        <entry name="scroller">$02FFAA88</entry>
+                        <entry name="template">$02ADCCE1</entry>
+                        <entry name="selected">$020C94FC</entry>
+                        <entry name="faulty">$020B55FF</entry>
+                        <entry name="item">$02EBDBD7</entry>
+                        <entry name="template_inited">$02DFFFE1</entry>
+                        <entry name="item_inited">$00AECCE2</entry>
+                        <entry name="last_taken">1</entry>
+                        <entry name="last_read">2</entry>
+                        <entry name="external_cursor">3</entry>
+                    </entry>
+                    <entry name="single_machine_mode">false</entry>
+                    <entry name="allow_alphanumeric_imports">true</entry>
+                    <entry name="videohub">
+                        <entry name="auto_search_on_read">false</entry>
+                    </entry>
+                    <entry name="itemselector">
+                        <entry name="autoupdatecache">false</entry>
+                    </entry>
+                    <entry name="pooleditor">
+                        <entry name="disable_initial_iconloading">false</entry>
+                    </entry>
+                    <entry name="reload_page_on_serverchange">false</entry>
+                    <entry name="loglevel"/>
+                    <entry name="script_loglevel"/>
+                    <entry name="onair_password"/>
+                    <entry name="vizworld">
+                        <entry name="simple_client">Classic Edition</entry>
+                    </entry>
+                    <entry name="create_page_icons">false</entry>
+                    <entry name="ignore_nameless_tabfields"/>
+                    <entry name="text_import_format">UTF8</entry>
+                    <entry name="pagelist">
+                        <entry name="font_size">8</entry>
+                    </entry>
+                    <entry name="avifolder"/>
+                    <entry name="diffolder"/>
+                    <entry name="imagefolder"/>
+                    <entry name="audiofolder"/>
+                    <entry name="scripts">
+                        <entry name="path"/>
+                    </entry>
+                    <entry name="logfile_path"/>
+                    <entry name="shared_temp_folder"/>
+                    <entry name="help">
+                        <entry name="path">
+                            C:\Program Files (x86)\Vizrt\Viz Trio\documentation\WebHelp\index.htm
+                        </entry>
+                    </entry>
+                    <entry name="renderer_force_sleep">false</entry>
+                    <entry name="viz">
+                        <entry name="vconntimeout">30000</entry>
+                    </entry>
+                    <entry name="enable_single_layer_transition_logic">false</entry>
+                    <entry name="refreshrate">50</entry>
+                    <entry name="restrictions">
+                        <entry name="shows">
+                            <entry name="deny_browse_viz_dir">true</entry>
+                        </entry>
+                        <entry name="page">
+                            <entry name="deny_save_to_db">true</entry>
+                        </entry>
+                        <entry name="trio">
+                            <entry name="gui:show_triocommands">true</entry>
+                            <entry name="gui:artist_mode">false</entry>
+                        </entry>
+                    </entry>
+                    <entry name="store_database_button_visible">false</entry>
+                    <entry name="showcommands">false</entry>
+                    <entry name="enable_vizartist_button">true</entry>
+                    <entry name="vizdb">
+                        <entry name="mruhostlist">localhost</entry>
+                        <entry name="nameserver">localhost</entry>
+                        <entry name="database">VizDbServer</entry>
+                        <entry name="user">Guest</entry>
+                        <entry name="password"/>
+                        <entry name="autologin">false</entry>
+                    </entry>
+                    <entry name="image">
+                        <entry name="use_picture_db">true</entry>
+                        <entry name="picture_db_connection_string"/>
+                        <entry name="default_selection_mode">viz</entry>
+                    </entry>
+                    <entry name="preview_mode">rgb</entry>
+                    <entry name="startupshow">DemoShow</entry>
+                    <entry name="last_import_scene_path">SCENE*xwzqx</entry>
+                    <entry name="show_boundingbox">true</entry>
+                    <entry name="show_titlearea">true</entry>
+                    <entry name="show_safearea">true</entry>
+                    <entry name="last_taken">
+                        /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/mastertemplates/DS_2
+                    </entry>
+                    <entry name="message_dialog">
+                        <entry name="show_warnings">false</entry>
+                    </entry>
+                    <entry name="update_external_cursor_on_saveas">false</entry>
+                    <entry name="size">
+                        <entry name="width">954</entry>
+                        <entry name="height">540</entry>
+                        <entry name="left">425</entry>
+                        <entry name="top">301</entry>
+                        <entry name="state">1</entry>
+                    </entry>
+                    <entry name="import_frame">
+                        <entry name="sort_by">name</entry>
+                        <entry name="sort_direction">ascending</entry>
+                    </entry>
+                    <entry name="snapshot">
+                        <entry name="channel">A</entry>
+                        <entry name="imagepath">IMAGE</entry>
+                    </entry>
+                </entry>
+            </entry>
+            <entry name="global">
+                <entry name="keymap">
+                    <entry name="read" key="+" description="Reads the specified page number" namespace="page"/>
+                    <entry name="change_path" key="F2" description="Shows the directory selector" control="true" namespace="gui"/>
+                    <entry name="save" key="S" description="Saves current page" control="true" namespace="page"/>
+                    <entry name="add_view" key="--NONE--" description="Creates a new view. If called without any parameters a dialog will be shown. Min and max may optionally be specified to filter elements with numeric names. Elements with non-numeric names will always be included. elementTypeList is an optional space-separated list of types of elements to include in the view. Possible values are: pages stills videos empty_groups. If none are specified, all will be included. Example 1: gui:add_view 'The Title' 2000 3500 pages stills. This will show pages and stills in the range between 2000 and 3500. Videos will not be shown and empty groups will be hidden. Example 2: gui:add_view title2 videos. This will show all videos, nothing else." namespace="gui"/>
+                    <entry name="focus_active_view" key="F1" description="Set the keyboard focus to the active page view." control="true" namespace="gui"/>
+                    <entry name="focus_next_view" key="--NONE--" description="Activate the next page view" namespace="gui"/>
+                    <entry name="focus_prev_view" key="--NONE--" description="Activate the previous page view" namespace="gui"/>
+                    <entry name="load_image_from_viz" key="F5" description="Show the viz image browser for the current tabfield." control="true" namespace="gui"/>
+                    <entry name="load_image_from_db" key="F6" description="Show the image database browser for the current tabfield." control="true" namespace="gui"/>
+                    <entry name="kerning" key="K" description="Change to kerning editor of current tabfield or set its value (float)" control="true" namespace="tabfield"/>
+                    <entry name="scaling" key="E" description="Change to scaling editor of current tabfield or set its value (float) " control="true" namespace="tabfield"/>
+                    <entry name="position" key="Q" description="Change to position editor of current tabfield or set its value (floats) " control="true" namespace="tabfield"/>
+                    <entry name="active" key="T" description="Toggle active flag of current tabfield or set its value (0 or 1) " control="true" namespace="tabfield"/>
+                    <entry name="rotation" key="W" description="Change to rotation editor of current tabfield or set its value (floats) " control="true" namespace="tabfield"/>
+                    <entry name="browse_file" key="B" control="true" namespace="tabfield"/>
+                    <entry name="take" key="-" description="Does a take on the current page or on page specified" namespace="page"/>
+                    <entry name="takeout" key="*" description="Take out current page or page specified" namespace="page"/>
+                    <entry name="takenext" key="F8" description="Take current page and read next page in active view" namespace="page"/>
+                    <entry name="text" key="SPACE" description="Change to text editor of current tabfield or set its value (unicode string) " control="true" namespace="tabfield"/>
+                    <entry name="onair" key="--NONE--" description="Set client in OnAir mode" namespace="trio"/>
+                    <entry name="offair" key="--NONE--" description="Set client in OffAir mode" namespace="trio"/>
+                    <entry name="saveas" description="Goes in saveas mode or saves page to page given as argument" control="true" alt="true" namespace="page" key="S"/>
+                    <entry name="show_replace_list" namespace="text" description="Shows the preconfigured character palette for the character to the left of the cursor"/>
+                    <entry name="set_kerning_mode" namespace="text" description="Set text manipulation mode to Kerning"/>
+                    <entry name="set_scale_mode" namespace="text" description="Set text manipulation mode to Scale"/>
+                    <entry name="set_position_mode" namespace="text" description="Set text manipulation mode to Kerning"/>
+                    <entry name="set_alpha_mode" namespace="text" description="Set text manipulation mode to Alpha"/>
+                    <entry name="set_color_mode" namespace="text" description="Set text manipulation mode to Color"/>
+                    <entry name="set_rotate_xy_mode" namespace="text" description="Set text manipulation mode to Rotate x and y"/>
+                    <entry name="set_rotate_z_mode" namespace="text" description="Set text manipulation mode to Rotate z"/>
+                    <entry name="set_right_to_left_reading_order" namespace="text" description="Set text editor right to left reading order"/>
+                    <entry name="browse_image" namespace="gui" description="Browse local filesystem for images"/>
+                    <entry name="import_value_from_file" namespace="tabfield" description="Load a tabfield value from a text file (UTF-8 encoded)."/>
+                    <entry name="undo" namespace="page" description="Undo edit in current page history."/>
+                    <entry name="redo" namespace="page" description="Redo edit in current page history."/>
+                    <entry name="downcase_tabfield" namespace="tabfield" description="Convert current tabfield to lower case, if it contains text"/>
+                    <entry name="upcase_tabfield" namespace="tabfield" description="Convert current tabfield to upper case, if it contains text"/>
+                    <entry name="next_property" namespace="tabfield" description="Select the next property of the current tabfield, or the first if the last one is currently selected."/>
+                    <entry name="previous_property" namespace="tabfield" description="Select the previous property of the current tabfield, or the last if the first one is currently selected."/>
+                    <entry name="move_current_row_up" namespace="table" description="Move the selected row in the current table editor one step upwards."/>
+                    <entry name="move_current_row_down" namespace="table" description="Move the selected row in the current table editor one step downwards."/>
+                    <entry name="clear_sorting" namespace="table" description="Clear the sorted state of a table property."/>
+                    <entry name="import_show" namespace="show" description="Import a show (trio archive)"/>
+                    <entry name="display_imported_archives" namespace="trio" description="Display a list of the imported trio-archives"/>
+                    <entry name="execute_script" namespace="script" description="Tries to run the OnUserClick event on the current template script. Doesn't report any errors e.g. if the event is not handled in the template script."/>
+                    <entry name="toggle_hide_empty_locked_groups" namespace="gui" description="Deprecated: use set_setting groups/hide_empty_locked_groups true|false instead."/>
+                    <entry name="toggle_hide_nameless_groups" namespace="gui" description="Deprecated: use set_setting groups/hidenamelessgroups true|false instead."/>
+                    <entry name="read_page_following_last_taken" namespace="gui" description="Read the page succeeding the page that was last taken"/>
+                    <entry name="select_last_taken_page" namespace="gui" description="Select the page that was last taken"/>
+                    <entry name="image_scaling" namespace="tabfield" description="Change to image scaling editor of current tabfield or set its value (two floats)"/>
+                    <entry name="image_position" namespace="tabfield" description="Change to image position editor of current tabfield or set its value (two floats)"/>
+                    <entry name="geom" namespace="tabfield" description="Change to geom editor of current tabfield or set its value (GEOM*path) "/>
+                    <entry name="image" namespace="tabfield" description="Change to image editor of current tabfield or set its value (IMAGE*path or filename) "/>
+                    <entry name="material" namespace="tabfield" description="Change to material editor of current tabfield or set its value (MATERIAL*path) "/>
+                    <entry name="clock" namespace="tabfield" description="Change to clock editor of current tabfield or set its value (string)"/>
+                    <entry name="value" namespace="tabfield" description="Change to default editor"/>
+                    <entry name="clear_preview" namespace="trio" description="Clears the Viz layers for the Viz preview channel. Memory is not freed. Doesn't clear the channel for transition logic pages."/>
+                    <entry name="clear_program" namespace="trio" description="Clears the Viz layers for the Viz program channel. Memory is not freed. Doesn't clear the channel for transition logic pages."/>
+                    <entry name="swap_channels" namespace="trio" description="Swaps the program and preview channels if both are defined."/>
+                    <entry name="check_channels_status" namespace="trio" description="Check connection status of program and preview channels in profile. Both for Viz Engine and video channels. Returns 'true' if all are good, 'false' otherwise."/>
+                    <entry name="list_viz_channels" namespace="channelcontrol" description="Returns all Viz channels of the current profile as comma separated list."/>
+                    <entry name="list_video_channels" namespace="channelcontrol" description="Returns all video channels of the current profile as comma separated list."/>
+                    <entry name="arm_current" namespace="page" description="Arms the current page for firing. If channelName is empty, the default channel is used."/>
+                    <entry name="unarm_current" namespace="page" description="Un-arms the current page."/>
+                    <entry name="unarm_all" namespace="page" description="Un-arms all armed pages."/>
+                    <entry name="load_armed" namespace="show" description="Load all armed elements on their channels."/>
+                    <entry name="help" key="F1" description="Opens the Viz Trio User's Guide in a browser window." namespace="trio"/>
+                    <entry name="create_snapshot_page" namespace="trio" description="Takes a snapshot and creates a page with that snapshot."/>
+                    <entry name="toggle_error_message_window" namespace="gui" description="Toggle the visibility of the error message window."/>
+                    <entry name="artist_mode" namespace="gui" description="Enter design mode (Viz Artist)."/>
+                    <entry name="design_mode" namespace="gui" description="Enter Trio design mode."/>
+                    <entry name="playout_mode" namespace="gui" description="Enter playout mode."/>
+                    <entry name="toggle_design_mode" namespace="gui" description="Toggle between Trio design and playout mode."/>
+                    <entry name="continue" namespace="page" description="Only applicaple to videos. Continues the video specified as parameter or the currently read video if the parameter is empty."/>
+                    <entry name="cue" namespace="page" description="Cues the page specified as parameter or the selected if the parameter is empty."/>
+                    <entry name="cue_append" namespace="page" description="Only applicaple to videos. Cues the video after the currently playing video. Specify a page as parameter or no parameter for the currently read video."/>
+                    <entry name="prepare" namespace="page" description="Prepares the page specified as parameter or the currently read if the parameter is empty."/>
+                    <entry name="pause" namespace="page" description="Only applicable to videos. Pauses the video. Specify a page as parameter or no parameter for the currently read video."/>
+                    <entry name="direct_take" namespace="page" description="Take selected page in active view"/>
+                    <entry name="direct_takeout" namespace="page" description="Take out selected page in active view"/>
+                    <entry name="direct_continue" namespace="page" description="Continue selected page in active view"/>
+                    <entry name="direct_cut" namespace="page" description="Cut selected page in active view"/>
+                    <entry name="delete_page" namespace="page" description="Delete selected page(s) in active view"/>
+                    <entry name="store" namespace="page" description="Save the page with the name given in the readpage edit field (the left one) "/>
+                    <entry name="take_path" namespace="page" description="Does a take on the specified VDOM path. Only for internal use."/>
+                    <entry name="cut" namespace="page" description="Cut the current page or the page specified"/>
+                    <entry name="update" namespace="page" description="Update the program rendererer. (do a take without animating it in) "/>
+                    <entry name="take_exchange" namespace="page" description="Take current page and read the last page that was taken"/>
+                    <entry name="readnext" namespace="page" description="Read next element in active view "/>
+                    <entry name="readprevious" namespace="page" description="Read previous element in active view "/>
+                    <entry name="update_preview" namespace="page" description="Update the external preview rendererer with the contents of the local preview."/>
+                    <entry name="clear_page_field" namespace="gui" description="Clear the content of the pageedit textfield"/>
+                    <entry name="edit_scroll" namespace="gui" description="Show the scroll editor"/>
+                    <entry name="find" namespace="gui" description="Shows the find dialog"/>
+                    <entry name="edit_page_description" namespace="gui" description="Shows the inplace editor for the selected page"/>
+                    <entry name="edit_begin_time" namespace="gui" description="Shows the inplace editor for the selected page"/>
+                    <entry name="edit_end_time" namespace="gui" description="Shows the inplace editor for the selected page"/>
+                    <entry name="edit_group_name" namespace="gui" description="Shows the inplace editor for the selected page"/>
+                    <entry name="edit_page_program_channel" namespace="gui" description="Shows the inplace editor for the selected page"/>
+                    <entry name="show_pageeditor" namespace="gui" description="Shows the page editor."/>
+                    <entry name="show_scripteditor" namespace="gui" description="Shows the script editor."/>
+                    <entry name="show_showscript_editor" namespace="gui" description="Shows the showscript editor."/>
+                    <entry name="show_scroll_template_creator" namespace="gui" description="Shows the scroll template creator view."/>
+                    <entry name="show_search_media" namespace="gui" description="Shows the search media view."/>
+                    <entry name="show_search_video" namespace="gui" description="Shows the search video view."/>
+                    <entry name="search_video" namespace="gui" description="Search for video."/>
+                    <entry name="set_focus_to_editor" namespace="gui" description="Sets focus to the currently active tabfield editor."/>
+                    <entry name="show_triocommands" namespace="gui" description="Toggles the Trio Commands window."/>
+                    <entry name="set_bounding_box" namespace="gui" description="Toggle boundingbox"/>
+                    <entry name="set_safearea" namespace="gui" description="Toggle safearea"/>
+                    <entry name="set_titlearea" namespace="gui" description="Toggle titlearea"/>
+                    <entry name="select_nextpage" namespace="gui" description="Select the next page in the active view"/>
+                    <entry name="select_prevpage" namespace="gui" description="Select the previous page in the active view"/>
+                    <entry name="prepare_snapshot" namespace="gui" description="Open the prepare snapshot editor"/>
+                    <entry name="post_render" namespace="gui" description="Opens the postrender editor "/>
+                    <entry name="show_settings" namespace="gui" description="Open the show settings view"/>
+                    <entry name="show_pageview" namespace="gui" description="Show the page view"/>
+                    <entry name="show_export_dialog" namespace="gui" description="Show the export show dialog"/>
+                    <entry name="initialize_show_or_playlist" namespace="trio" description="Initialize current show or playlist on external renderers."/>
+                    <entry name="show_import_dialog" namespace="gui" description="Show the import show dialog"/>
+                    <entry name="show_shortcut_list" namespace="gui" description="Show the view of local shortcuts and macros"/>
+                    <entry name="take_callup" namespace="gui" description="Take the current callup number directly, without a read"/>
+                    <entry name="open_effect_dialog" namespace="gui" description="This command opens the effect dialog. Will not open if current page is not set."/>
+                    <entry name="delete_all_pages" namespace="show" description="Deletes all the pages in the pageview"/>
+                    <entry name="import" namespace="show" description="Shows the importframe or import the specified scene(s)"/>
+                    <entry name="reimport_active_template" namespace="vtwtemplate" description="Reimports the active VTW template for the current show"/>
+                    <entry name="snapshot"/>
+                    <entry name="exchange" namespace="trio" description="Exchange the the content of the program and external preview"/>
+                    <entry name="callup" namespace="page" description="Deprecated, use page:read instead."/>
+                    <entry name="save_scene" namespace="page" description="Save current page as a new Viz scene"/>
+                    <entry name="show_feed_streamer_moderation" namespace="gui" description="Opens the feed streamer moderation tool if Viz SocialTV is installed."/>
+                    <entry name="go_to_next_story" namespace="rundown" description="Sets focus on the next story/group in the active rundown"/>
+                    <entry name="go_to_previous_story" namespace="rundown" description="Sets focus on the previous story/group in the active rundown"/>
+                </entry>
+                <entry name="macros"/>
+                <entry name="default_editor_font">
+                    <entry name="size"/>
+                    <entry name="name"/>
+                </entry>
+                <entry name="encoding">UTF-8</entry>
+                <entry name="global_variables">
+                    <entry name="imported_archives">
+                        "2015-06-15-18:23:19 filename: D:\mse_rest_examples\mse_rest_examples\CreatePageUsingDefaultTemplates\TestResources\example_show.trioshow show: DemoShow" "2015-06-15-18:34:46 filename: D:\mse_rest_examples\mse_rest_examples\CreatePageUsingDefaultTemplates\TestResources\example_show.trioshow show: DemoShow" "2015-06-16-11:46:27 filename: D:\mse_rest_examples\mse_rest_examples\CreatePageUsingDefaultTemplates\TestResources\example_show.trioshow show: DemoShow" "2015-06-16-14:23:26 filename: D:\mse_rest_examples\mse_rest_examples\CreatePageUsingDefaultTemplates\TestResources\example_show.trioshow show: DemoShow" "2015-06-16-14:28:40 filename: D:\mse_rest_examples\mse_rest_examples\CreatePageUsingDefaultTemplates\TestResources\example_show.trioshow show: DemoShow" "2015-06-18-11:53:17 filename: D:\mse_rest_examples\mse_rest_examples\TemplateCollection\TestResources\example_show.trioshow show: DemoShow"
+                    </entry>
+                </entry>
+            </entry>
+        </entry>
+        <entry name="profiles" updated="2015-06-17T02:37:58Z" atomid="tag:zhang-pc,2015-06-17:0:/profiles">
+            <entry name="default" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-17:0:/profiles/default" updated="2015-06-17T02:37:58Z">
+                <entry name="cursorstate">
+                    /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/elements/1001
+                </entry>
+                <entry name="client_command"/>
+                <entry name="program">
+                    <entry name="viz">
+                        <entry>A</entry>
+                    </entry>
+                </entry>
+                <entry name="preview"/>
+                <entry name="viz_program">viz_background_p</entry>
+                <entry name="viz_preview"/>
+                <entry name="handlers">
+                    <entry name="video_program"/>
+                    <entry name="video_preview"/>
+                    <entry name="viz_program">viz_background_p</entry>
+                    <entry name="A">viz_background_p</entry>
+                </entry>
+                <entry name="execution_groups">
+                    <entry name="A" allocate="false">
+                        <entry name="entry#2">
+                            <entry name="viz">viz_background_p</entry>
+                        </entry>
+                    </entry>
+                </entry>
+                <entry name="base">/</entry>
+                <entry name="directory">
+                    /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/elements
+                </entry>
+                <entry name="cursors">
+                    <entry name="element">
+                        <entry name="last_taken_in_profile">/mseq_internal/qggytfowatyjoyilsarz/env/002</entry>
+                    </entry>
+                    <entry name="gui">
+                        <entry name="current_for_host">
+                            <entry name="ZHANG-PC">
+                                /storage/shows/{E930457A-CEB7-4373-8931-54A170C7AAEB}/playlists/{97BDFE88-4998-4B50-947A-1C9CA2B84308}/elements/ref#2
+                            </entry>
+                        </entry>
+                    </entry>
+                </entry>
+                <entry name="playlist_state"/>
+            </entry>
+        </entry>
+        <entry name="as_run_log_file"/>
+        <entry name="preview_server">
+            <entry name="host"/>
+            <settings/>
+        </entry>
+        <entry name="gateway">
+            <entry name="msemos">
+                <map name="autoconnect_targets_unused">
+                    <entry name="10.0.0.1" value="10640;VIZGATEWAY-client;mos;roReqAll"/>
+                </map>
+                <map name="autoconnect_targets"/>
+                <entry name="mosconfig">
+                    <entry name="auto_connect_interval" value="1"/>
+                    <entry name="mosid" value="PILOT"/>
+                    <entry name="ncsid" value="COLUMBUS"/>
+                    <entry name="convert_from_utc" value="false"/>
+                    <entry name="send_ro_item_stat" value="false"/>
+                    <entry name="activate_playlist" value="false"/>
+                    <entry name="default_profile" value="vizroom1"/>
+                </entry>
+            </entry>
+        </entry>
+        <entry name="playlists">
+            <entry name="filters">
+                <entry name="available"/>
+            </entry>
+            <entry name="client_settings">
+                <entry name="ZHANG-PC">
+                    <entry name="wpf">
+                        <entry name="default"/>
+                    </entry>
+                </entry>
+            </entry>
+        </entry>
+    </entry>
+    <entry name="error"/>
+    <entry name="temp">
+        <entry name="tempZHANG-PC">
+            <entry name="set_response">none</entry>
+            <entry name="run_response_node">
+                <set>
+                    <path>/temp/tempZHANG-PC/set_response</path>
+                    <value>
+                        <var>reqid</var>
+                        <var name="var#2">response</var>
+                    </value>
+                </set>
+            </entry>
+        </entry>
+    </entry>
+    <entry name="directory" updated="2015-06-15T10:56:32Z" atomid="tag:zhang-pc,2015-06-15:0:/directory/">
+        <entry name="playlists" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-15:0:/directory/playlists" updated="2015-06-15T10:56:32Z">
+            <element name="example_playlist.xml" type="image" description="example_playlist.xml">
+                <ref name="master_template">/storage/mastertemplates/stillstore</ref>
+                <entry name="data">
+                    <entry name="1">
+                        "D:\mse_rest_examples\mse_rest_examples\CreatePageUsingMOSItem\TestResources\example_playlist.xml"
+                    </entry>
+                </entry>
+            </element>
+        </entry>
+        <entry name="shows" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-15:0:/directory/shows" updated="2015-06-15T10:56:32Z">
+            <entry name="今日说法" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-15:0:/directory/shows/今日说法" updated="2015-06-15T10:56:55Z">
+                <ref name="20150630.show" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:0:/directory/shows/今日说法/20150630.show" updated="2015-06-23T02:39:50Z">
+                    /storage/shows/{FCEDE216-C154-4FA3-B393-64B1EC8F5510}
+                </ref>
+            </entry>
+            <ref name="untitled show.show" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-15:0:/directory/shows/untitled%20show.show" updated="2015-06-23T09:38:59Z">
+                /storage/shows/{EE6CFCCF-44C6-456B-8C80-92FBA89A969A}
+            </ref>
+            <ref name="DemoShow.show" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:0:/directory/shows/DemoShow.show" updated="2015-06-18T03:55:40Z">
+                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}
+            </ref>
+            <ref name="My Show.show" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:0:/directory/shows/My%20Show.show" updated="2015-06-18T06:43:03Z">
+                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}
+            </ref>
+        </entry>
+    </entry>
+    <entry name="sys">
+        <entry name="gpi">
+            <entry name="DH0">
+                <env>
+                    <def var="profile">/config/profiles/default</def>
+                    <def name="def#2" var="command">take_and_advance</def>
+                    <ref>/logic/cursor/run</ref>
+                </env>
+            </entry>
+            <entry name="DH1">
+                <env>
+                    <def var="profile">/config/profiles/default</def>
+                    <def name="def#2" var="command">next</def>
+                    <ref>/logic/cursor/run</ref>
+                </env>
+            </entry>
+            <entry name="DH2">
+                <env>
+                    <def var="profile">/config/profiles/default</def>
+                    <def name="def#2" var="command">previous</def>
+                    <ref>/logic/cursor/run</ref>
+                </env>
+            </entry>
+            <entry name="DH3">
+                <env>
+                    <def var="profile">/config/profiles/default</def>
+                    <def name="def#2" var="command">take_current</def>
+                    <ref>/logic/cursor/run</ref>
+                </env>
+            </entry>
+        </entry>
+    </entry>
+    <entry name="storage">
+        <entry name="shows">
+            <entry name="{01F92F10-B0FA-4887-85E2-45C857A230DB}">
+                <entry name="elements"/>
+                <entry name="sceneinfos"/>
+                <entry name="sceneselectors"/>
+                <entry name="mastertemplates"/>
+                <entry name="environment"/>
+            </entry>
+            <entry name="{EE6CFCCF-44C6-456B-8C80-92FBA89A969A}" updated="2015-06-15T10:56:55Z">
+                <entry name="elements" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:0:/show/directory/shows/untitled%20show.show/" updated="2015-06-23T09:38:59Z"/>
+                <entry name="sceneinfos"/>
+                <entry name="sceneselectors"/>
+                <entry name="mastertemplates" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:2:/show/directory/shows/untitled%20show.show/" updated="2015-06-23T09:38:59Z"/>
+                <entry name="environment">
+                    <entry name="alternative_concept"/>
+                </entry>
+                <entry name="settings">
+                    <entry name="library_path">LIBRARY</entry>
+                    <entry name="default_viz_path"/>
+                    <entry name="preview_background_image"/>
+                    <entry name="description"/>
+                    <entry name="showscript"/>
+                    <entry name="custom_colors"/>
+                    <entry name="associated_files"/>
+                    <entry name="activetemplate"/>
+                    <entry name="transition_path">transitions</entry>
+                    <entry name="databases"/>
+                    <entry name="docking_layout">
+                        <entry name="panel_order">mastertemplates/allpages/tabfields/vtwtemplate</entry>
+                        <entry name="panels">
+                            <entry name="mastertemplates">
+                                <entry name="height">284</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="allpages">
+                                <entry name="height">359</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="tabfields">
+                                <entry name="height">233</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="vtwtemplate">
+                                <entry name="height">22</entry>
+                                <entry name="visible">false</entry>
+                            </entry>
+                        </entry>
+                    </entry>
+                </entry>
+                <entry name="playlists" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:1:/show/directory/shows/untitled%20show.show/" updated="2015-06-23T09:38:59Z"/>
+                <entry name="element_path">
+                    /storage/shows/{EE6CFCCF-44C6-456B-8C80-92FBA89A969A}/elements
+                </entry>
+                <entry name="keymap"/>
+                <entry name="macros"/>
+                <entry name="views" height="325"/>
+                <entry name="activetemplate"/>
+                <entry name="meta"/>
+                <entry name="library_path">LIBRARY</entry>
+            </entry>
+            <entry name="{4E21E9B4-2B78-4040-BA0C-3B1FB9839138}">
+                <entry name="elements"/>
+                <entry name="sceneinfos"/>
+                <entry name="sceneselectors"/>
+                <entry name="mastertemplates"/>
+                <entry name="environment"/>
+            </entry>
+            <entry name="{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}" loaded="1.00" available="1.00" atomid="tag:zhang-pc,2015-06-18:0:/element_collection/storage/shows/%7B38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1%7D" updated="2015-06-18T03:55:20Z">
+                <entry name="elements" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:0:/show/directory/shows/DemoShow.show/" updated="2015-06-18T03:55:40Z">
+                    <ref name="The item id" exists="no" description="This is the mos desription" atomid="tag:zhang-pc,2015-06-23:0:/pending_element/storage/shows/%7B38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1%7D/elements/The%20item%20id" updated="2015-06-23T01:52:31Z" guid="2015-06-23T02:34:08Z_ZHANG-PC_3540_0">/external/pilotdb/elements/1</ref>
+                </entry>
+                <entry name="sceneinfos">
+                    <element name="Default\One" layer="[MAIN]" description="RestDemoScene1" complete="true" showautodescription="true" scene="Default/One">
+                        <entry name="templates">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneinfos/Default\One
+                            </ref>
+                        </entry>
+                        <entry name="viz">
+                            <entry name="location">$object</entry>
+                            <entry name="front">
+                                <entry name="scene" timestamp="0">Default/One</entry>
+                            </entry>
+                            <entry name="load">scene</entry>
+                            <entry name="viz_layer">MAIN</entry>
+                            <entry name="use_all_directors">yes</entry>
+                            <entry name="directors">
+                                <entry name="Default">
+                                    <entry name="keyframes">
+                                        <keyframe name="keyframe#2" time="1.44000000000000" direction="both" type="stop"/>
+                                    </entry>
+                                    <entry name="duration">8.52</entry>
+                                </entry>
+                            </entry>
+                            <entry name="fonts"/>
+                        </entry>
+                        <schema>
+                            <field name="1" singleline="True" location="2" description="Agency-FB-Bold" type="richtext"/>
+                        </schema>
+                        <entry name="data">
+                            <entry name="1">RestDemoScene1</entry>
+                        </entry>
+                        <entry name="dblink"/>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="1" label="Agency-FB-Bold" tip="" mediatype="application/vnd.vizrt.richtext+xml" xsdtype="normalizedString"><value>RestDemoScene1</value></fielddef></schema></model>
+                        </entry>
+                    </element>
+                    <element name="Default\Two" layer="[MAIN]" description="RestDemoScene2" complete="true" showautodescription="true" scene="Default/Two">
+                        <entry name="templates">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneinfos/Default\Two
+                            </ref>
+                        </entry>
+                        <entry name="viz">
+                            <entry name="location">$object</entry>
+                            <entry name="front">
+                                <entry name="scene" timestamp="0">Default/Two</entry>
+                            </entry>
+                            <entry name="load">scene</entry>
+                            <entry name="viz_layer">MAIN</entry>
+                            <entry name="use_all_directors">yes</entry>
+                            <entry name="directors">
+                                <entry name="Default">
+                                    <entry name="keyframes"/>
+                                    <entry name="duration">1.001001</entry>
+                                </entry>
+                            </entry>
+                            <entry name="fonts"/>
+                        </entry>
+                        <schema>
+                            <field name="1" singleline="True" location="2" description="Aharoni-Bold" type="richtext"/>
+                        </schema>
+                        <entry name="data">
+                            <entry name="1">RestDemoScene2</entry>
+                        </entry>
+                        <entry name="dblink"/>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="1" label="Aharoni-Bold" tip="" mediatype="application/vnd.vizrt.richtext+xml" xsdtype="normalizedString"><value>RestDemoScene2</value></fielddef></schema></model>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="sceneselectors">
+                    <element name="One">
+                        <entry name="one_of">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneinfos/Default\One
+                            </ref>
+                        </entry>
+                    </element>
+                    <element name="Two">
+                        <entry name="one_of">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneinfos/Default\Two
+                            </ref>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="mastertemplates" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:2:/show/directory/shows/DemoShow.show/" updated="2015-06-18T03:55:40Z">
+                    <element name="One" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:0:/template_collection/storage/shows/%7B38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1%7D/mastertemplates/One" updated="2015-06-18T03:59:29Z">
+                        <entry name="default_alternatives"/>
+                        <entry name="layers">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneselectors/One
+                            </ref>
+                        </entry>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="1" label="Agency-FB-Bold" tip="" mediatype="application/vnd.vizrt.richtext+xml" xsdtype="normalizedString"><value>RestDemoScene1</value></fielddef></schema></model>
+                        </entry>
+                    </element>
+                    <element name="Two" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:0:/template_collection/storage/shows/%7B38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1%7D/mastertemplates/Two" updated="2015-06-18T04:16:02Z">
+                        <entry name="default_alternatives"/>
+                        <entry name="layers">
+                            <ref>
+                                /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/sceneselectors/Two
+                            </ref>
+                        </entry>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="1" label="Aharoni-Bold" tip="" mediatype="application/vnd.vizrt.richtext+xml" xsdtype="normalizedString"><value>RestDemoScene2</value></fielddef></schema></model>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="environment">
+                    <entry name="alternative_concept"/>
+                </entry>
+                <entry name="settings">
+                    <entry name="library_path"/>
+                    <entry name="default_viz_path"/>
+                    <entry name="preview_background_image"/>
+                    <entry name="description"/>
+                    <entry name="showscript"/>
+                    <entry name="custom_colors"/>
+                    <entry name="associated_files"/>
+                    <entry name="activetemplate"/>
+                    <entry name="transition_path">transitions</entry>
+                    <entry name="databases"/>
+                    <entry name="docking_layout">
+                        <entry name="panels">
+                            <entry name="mastertemplates">
+                                <entry name="height">334</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="allpages">
+                                <entry name="height">357</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="tabfields">
+                                <entry name="height">185</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="vtwtemplate">
+                                <entry name="height">22</entry>
+                                <entry name="visible">false</entry>
+                            </entry>
+                        </entry>
+                        <entry name="panel_order">mastertemplates/allpages/tabfields/vtwtemplate</entry>
+                    </entry>
+                </entry>
+                <entry name="playlists" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-18:1:/show/directory/shows/DemoShow.show/" updated="2015-06-18T03:55:40Z"/>
+                <entry name="element_path">
+                    /storage/shows/{38C36CF9-D9DE-4EA8-B2BA-D708E4CE42D1}/elements
+                </entry>
+                <entry name="keymap"/>
+                <entry name="macros"/>
+                <entry name="views" height="333"/>
+                <entry name="default_viz_path"/>
+                <entry name="library_path"/>
+                <entry name="preview_background_image"/>
+                <entry name="custom_colors"/>
+                <entry name="activetemplate"/>
+                <entry name="meta"/>
+            </entry>
+            <entry name="{B9EE035F-788A-495B-9147-C262D45A6A9D}" updated="2015-06-18T06:41:37Z" atomid="tag:zhang-pc,2015-06-18:0:/element_collection/storage/shows/%7BB9EE035F-788A-495B-9147-C262D45A6A9D%7D">
+                <entry name="elements" author="Media Sequencer Engine" atomid="tag:vizrt-pph,2013-10-02:0:/show/%7B81BC6030-3142-44F9-877F-CCD717D8DC25%7D/" updated="2013-10-02T09:15:39Z"/>
+                <entry name="sceneinfos">
+                    <element name="GDBD\text_03" layer="[MAIN]" description="广东电视台/2010.8.28" complete="true" showautodescription="true" scene="GDBD/text_03">
+                        <entry name="templates">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneinfos/GDBD\text_03
+                            </ref>
+                        </entry>
+                        <entry name="viz">
+                            <entry name="location">$object</entry>
+                            <entry name="front">
+                                <entry name="scene" timestamp="0">GDBD/text_03</entry>
+                            </entry>
+                            <entry name="load">scene</entry>
+                            <entry name="viz_layer">MAIN</entry>
+                            <entry name="use_all_directors">yes</entry>
+                            <entry name="directors">
+                                <entry name="Default">
+                                    <entry name="keyframes"/>
+                                    <entry name="duration">0</entry>
+                                </entry>
+                            </entry>
+                            <entry name="fonts"/>
+                        </entry>
+                        <schema>
+                            <field name="01text" location="1/1/1" description="text" type="richtext"/>
+                            <field name="01text.font" type="font" description="text"/>
+                            <field name="01text.kerning" min="-1000" max="1000" description="text" type="float"/>
+                            <field name="01text.line_spacing" min="-1000" max="1000" description="Line Spacing" type="float"/>
+                            <field name="02position.position" min="-1000000 -1000000 0" max="1000000 1000000 0" description="text" type="triplet"/>
+                            <field name="02position.scaling" max="1000000 1000000 0.400000006" lock="2" description="text" type="triplet" min="0 0 0.400000006"/>
+                            <field name="03text" location="1/1/2" description="text" type="richtext"/>
+                            <field name="03text.font" type="font" description="text"/>
+                            <field name="03text.kerning" min="-1000" max="1000" description="text" type="float"/>
+                            <field name="03text.line_spacing" min="-1000" max="1000" description="Line Spacing" type="float"/>
+                            <field name="04position.position" min="-1000000 -1000000 0" max="1000000 1000000 0" description="text" type="triplet"/>
+                            <field name="04position.scaling" max="1000000 1000000 0.218999997" lock="2" description="text" type="triplet" min="0 0 0.218999997"/>
+                        </schema>
+                        <entry name="data">
+                            <entry name="01text">广东电视台</entry>
+                            <entry name="01text.font">FONT*stxw/Da-Hei</entry>
+                            <entry name="01text.kerning">0</entry>
+                            <entry name="01text.line_spacing">0</entry>
+                            <entry name="02position.position">0 0.800000 0</entry>
+                            <entry name="02position.scaling">0.400000 0.353000 0.400000006</entry>
+                            <entry name="03text">2010.8.28</entry>
+                            <entry name="03text.font">FONT*stxw/Da-Hei</entry>
+                            <entry name="03text.kerning">0</entry>
+                            <entry name="03text.line_spacing">0</entry>
+                            <entry name="04position.position">0 -45.200001 0</entry>
+                            <entry name="04position.scaling">0.219000 0.184000 0.218999997</entry>
+                        </entry>
+                        <entry name="dblink"/>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="01text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml"><fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font"><value>FONT*stxw/Da-Hei</value></fielddef><fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><value>广东电视台</value></fielddef><fielddef name="02position"><fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0 0.800000 0</value></fielddef><fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0.400000 0.353000 0.400000006</value></fielddef></fielddef><fielddef name="03text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml"><fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font"><value>FONT*stxw/Da-Hei</value></fielddef><fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><value>2010.8.28</value></fielddef><fielddef name="04position"><fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0 -45.200001 0</value></fielddef><fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0.219000 0.184000 0.218999997</value></fielddef></fielddef></schema></model>
+                        </entry>
+                    </element>
+                    <element name="GDBD\text_02" layer="[MAIN]" description="导演 某某某" complete="true" showautodescription="true" scene="GDBD/text_02">
+                        <entry name="templates">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneinfos/GDBD\text_02
+                            </ref>
+                        </entry>
+                        <entry name="viz">
+                            <entry name="location">$object</entry>
+                            <entry name="front">
+                                <entry name="scene" timestamp="0">GDBD/text_02</entry>
+                            </entry>
+                            <entry name="load">scene</entry>
+                            <entry name="viz_layer">MAIN</entry>
+                            <entry name="use_all_directors">yes</entry>
+                            <entry name="directors">
+                                <entry name="Default">
+                                    <entry name="keyframes"/>
+                                    <entry name="duration">0</entry>
+                                </entry>
+                            </entry>
+                            <entry name="fonts"/>
+                        </entry>
+                        <schema>
+                            <field name="01text" location="1/1/1" description="text" type="richtext"/>
+                            <field name="01text.font" type="font" description="text"/>
+                            <field name="01text.kerning" min="-1000" max="1000" description="text" type="float"/>
+                            <field name="01text.line_spacing" min="-1000" max="1000" description="Line Spacing" type="float"/>
+                            <field name="02position.position" min="-1000000 -1000000 0" max="1000000 1000000 0" description="text" type="triplet"/>
+                            <field name="02position.scaling" max="1000000 1000000 0.218999997" lock="2" description="text" type="triplet" min="0 0 0.218999997"/>
+                        </schema>
+                        <entry name="data">
+                            <entry name="01text">导演 某某某</entry>
+                            <entry name="01text.font">FONT*stxw/Da-Hei</entry>
+                            <entry name="01text.kerning">0</entry>
+                            <entry name="01text.line_spacing">0</entry>
+                            <entry name="02position.position">0 0 0</entry>
+                            <entry name="02position.scaling">0.219000 0.184000 0.218999997</entry>
+                        </entry>
+                        <entry name="dblink"/>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="01text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml"><fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font"><value>FONT*stxw/Da-Hei</value></fielddef><fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><value>导演 某某某</value></fielddef><fielddef name="02position"><fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0 0 0</value></fielddef><fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0.219000 0.184000 0.218999997</value></fielddef></fielddef></schema></model>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="sceneselectors">
+                    <element name="text_03">
+                        <entry name="one_of">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneinfos/GDBD\text_03
+                            </ref>
+                        </entry>
+                    </element>
+                    <element name="text_02">
+                        <entry name="one_of">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneinfos/GDBD\text_02
+                            </ref>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="mastertemplates" author="Media Sequencer Engine" atomid="tag:vizrt-pph,2013-10-02:2:/show/%7B81BC6030-3142-44F9-877F-CCD717D8DC25%7D/" updated="2013-10-02T09:15:39Z">
+                    <element name="text_03" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-22:1:/template_collection/storage/shows/%7BB9EE035F-788A-495B-9147-C262D45A6A9D%7D/mastertemplates/text_03" updated="2015-06-22T07:43:35Z">
+                        <entry name="default_alternatives"/>
+                        <entry name="layers">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneselectors/text_03
+                            </ref>
+                        </entry>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types">
+                                <schema>
+                                    <fielddef name="01text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml">
+                                        <fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font">
+                                            <value>FONT*stxw/Da-Hei</value>
+                                        </fielddef>
+                                        <fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal">
+                                            <value>0</value>
+                                        </fielddef>
+                                        <fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal">
+                                            <value>0</value>
+                                        </fielddef>
+                                        <value>广东电视台</value>
+                                    </fielddef>
+                                    <fielddef name="02position">
+                                        <fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet">
+                                            <value>0 0.800000 0</value>
+                                        </fielddef>
+                                        <fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet">
+                                            <value>0.400000 0.353000 0.400000006</value>
+                                        </fielddef>
+                                    </fielddef>
+                                    <fielddef name="03text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml">
+                                        <fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font">
+                                            <value>FONT*stxw/Da-Hei</value>
+                                        </fielddef>
+                                        <fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal">
+                                            <value>0</value>
+                                        </fielddef>
+                                        <fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal">
+                                            <value>0</value>
+                                        </fielddef>
+                                        <value>2010.8.28</value>
+                                    </fielddef>
+                                    <fielddef name="04position">
+                                        <fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet">
+                                            <value>0 -45.200001 0</value>
+                                        </fielddef>
+                                        <fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet">
+                                            <value>0.219000 0.184000 0.218999997</value>
+                                        </fielddef>
+                                    </fielddef>
+                                </schema>
+                            </model>
+                        </entry>
+                        <entry name="image"/>
+                        <entry name="image#2"/>
+                    </element>
+                    <element name="text_02" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-22:0:/template_collection/storage/shows/%7BB9EE035F-788A-495B-9147-C262D45A6A9D%7D/mastertemplates/text_02" updated="2015-06-22T07:43:35Z">
+                        <entry name="default_alternatives"/>
+                        <entry name="layers">
+                            <ref>
+                                /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/sceneselectors/text_02
+                            </ref>
+                        </entry>
+                        <entry name="model_xml">
+                            <model xmlns="http://www.vizrt.com/types"><schema><fielddef name="01text" label="text" tip="" mediatype="application/vnd.vizrt.richtext+xml"><fielddef name="font" label="text" tip="" mediatype="application/vnd.vizrt.viz.font"><value>FONT*stxw/Da-Hei</value></fielddef><fielddef name="kerning" label="text" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><fielddef name="line_spacing" label="Line Spacing" tip="" mediatype="text/plain" xsdtype="decimal"><value>0</value></fielddef><value>导演 某某某</value></fielddef><fielddef name="02position"><fielddef name="position" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0 0 0</value></fielddef><fielddef name="scaling" label="text" tip="" mediatype="application/vnd.vizrt.triplet"><value>0.219000 0.184000 0.218999997</value></fielddef></fielddef></schema></model>
+                        </entry>
+                    </element>
+                </entry>
+                <entry name="environment">
+                    <entry name="alternative_concept"/>
+                </entry>
+                <entry name="settings">
+                    <entry name="library_path">LIBRARY</entry>
+                    <entry name="default_viz_path"/>
+                    <entry name="preview_background_image"/>
+                    <entry name="description"/>
+                    <entry name="showscript"/>
+                    <entry name="custom_colors">
+                        clRed,clYellow,clLime,clAqua,clBlue,clFuchsia,$00C2C2C2,clWhite,clMaroon,$000080FF,$0000FF80,$00FF8000,clPurple,$00FF0080,$00555555,clBlack
+                    </entry>
+                    <entry name="associated_files"/>
+                    <entry name="activetemplate"/>
+                    <entry name="transition_path">transitions</entry>
+                    <entry name="databases"/>
+                    <entry name="docking_layout">
+                        <entry name="panel_order">mastertemplates/allpages/vtwtemplate/tabfields</entry>
+                        <entry name="panels">
+                            <entry name="mastertemplates">
+                                <entry name="height">280</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="allpages">
+                                <entry name="height">262</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                            <entry name="vtwtemplate">
+                                <entry name="height">22</entry>
+                                <entry name="visible">false</entry>
+                            </entry>
+                            <entry name="tabfields">
+                                <entry name="height">334</entry>
+                                <entry name="visible">true</entry>
+                            </entry>
+                        </entry>
+                    </entry>
+                    <entry name="store_show_script_in_MSE">false</entry>
+                </entry>
+                <entry name="playlists" author="Media Sequencer Engine" atomid="tag:vizrt-pph,2013-10-02:1:/show/%7B81BC6030-3142-44F9-877F-CCD717D8DC25%7D/" updated="2013-10-02T09:15:39Z"/>
+                <entry name="element_path">
+                    /storage/shows/{B9EE035F-788A-495B-9147-C262D45A6A9D}/elements
+                </entry>
+                <entry name="keymap"/>
+                <entry name="macros"/>
+                <entry name="views" height="250"/>
+                <entry name="default_viz_path"/>
+                <entry name="library_path">LIBRARY</entry>
+                <entry name="preview_background_image"/>
+                <entry name="custom_colors"/>
+                <entry name="activetemplate"/>
+                <entry name="meta"/>
+                <entry name="scripts"/>
+            </entry>
+            <entry name="{FCEDE216-C154-4FA3-B393-64B1EC8F5510}" updated="2015-06-23T02:39:37Z">
+                <entry name="elements" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:0:/show/directory/shows/今日说法/20150630.show/" updated="2015-06-23T02:39:50Z"/>
+                <entry name="sceneinfos"/>
+                <entry name="sceneselectors"/>
+                <entry name="mastertemplates" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:2:/show/directory/shows/今日说法/20150630.show/" updated="2015-06-23T02:39:50Z"/>
+                <entry name="environment">
+                    <entry name="alternative_concept"/>
+                </entry>
+                <entry name="settings">
+                    <entry name="library_path"/>
+                    <entry name="default_viz_path"/>
+                    <entry name="preview_background_image"/>
+                    <entry name="description"/>
+                    <entry name="showscript"/>
+                    <entry name="custom_colors"/>
+                    <entry name="associated_files"/>
+                    <entry name="activetemplate"/>
+                    <entry name="transition_path">transitions</entry>
+                    <entry name="databases"/>
+                </entry>
+                <entry name="playlists" author="Media Sequencer Engine" atomid="tag:zhang-pc,2015-06-23:1:/show/directory/shows/今日说法/20150630.show/" updated="2015-06-23T02:39:50Z"/>
+                <entry name="element_path">
+                    /storage/shows/{FCEDE216-C154-4FA3-B393-64B1EC8F5510}/elements
+                </entry>
+                <entry name="keymap"/>
+                <entry name="macros"/>
+                <entry name="views" height="325"/>
+                <entry name="activetemplate"/>
+                <entry name="meta"/>
+            </entry>
+        </entry>
+        <entry name="sceneinfos">
+            <element name="stillstore" type="viz_image">
+                <entry name="viz">
+                    <entry name="location">$object</entry>
+                    <entry name="front">
+                        <entry name="scene">vizrt_stillstore</entry>
+                    </entry>
+                    <entry name="load">scene</entry>
+                </entry>
+                <entry name="templates">
+                    <ref>/storage/sceneinfos/stillstore</ref>
+                </entry>
+                <entry name="data">
+                    <entry name="1">
+                        <entry name="1"/>
+                    </entry>
+                </entry>
+                <schema>
+                    <field name="1" location="1/1" description="the still image path" type="image"/>
+                </schema>
+            </element>
+        </entry>
+        <entry name="sceneselectors">
+            <element name="stillstore">
+                <entry name="one_of">
+                    <ref>/storage/sceneinfos/stillstore</ref>
+                </entry>
+            </element>
+        </entry>
+        <entry name="mastertemplates">
+            <element name="stillstore">
+                <entry name="layers">
+                    <ref>/storage/sceneselectors/stillstore</ref>
+                </entry>
+            </element>
+        </entry>
+        <entry name="templates">
+            <element name="stillstore" type="viz_image">
+                <entry name="viz">
+                    <entry name="location">$object</entry>
+                    <entry name="front">
+                        <entry name="scene">vizrt_stillstore</entry>
+                    </entry>
+                    <entry name="load">scene</entry>
+                </entry>
+                <entry name="templates">
+                    <ref>/storage/templates/stillstore</ref>
+                </entry>
+                <entry name="data">
+                    <entry name="1">
+                        <entry name="1"/>
+                    </entry>
+                </entry>
+                <schema>
+                    <field name="1" location="1/1" description="the still image path" type="image"/>
+                </schema>
+            </element>
+        </entry>
+    </entry>
+    <entry name="active_profile">/config/profiles/default</entry>
+    <entry name="default_settings">
+        <entry name="buttons"/>
+    </entry>
+</entry>
